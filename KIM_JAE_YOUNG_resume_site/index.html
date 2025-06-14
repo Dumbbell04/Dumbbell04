@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KIM JAE YOUNG's Resume</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background">
+    <div class="profile">
+      <img src="img/profile.jpg" alt="프로필 사진" class="profile-pic">
+      <h1>제 이름은 김재영입니다.</h1>
+      <p>22 years old</p>
+      <button id="print-btn" title="이력서를 인쇄하거나 PDF로 저장합니다.">이력서 저장 (PDF)</button>
+    </div>
+
+    <section class="fade-in-section">
+      <h2>My Skills</h2>
+      <div class="skills">
+        <a href="#" class="info-item" data-title="Java" data-description="Java는 객체 지향형 프로그래밍 언어로 플랫폼 독립성을 가지고 있으며, 다양한 어플리케이션 개발에 사용됩니다.">
+          <img src="img/java.png" alt="Java">
+          <span>Java</span>
+        </a>
+        <a href="#" class="info-item" data-title="Python" data-description="Python은 간결한 문법이 특징인 프로그래밍 언어로, 데이터 분석, 인공지능, 웹 개발 등 다양한 분야에서 활용됩니다.">
+          <img src="img/python.png" alt="Python">
+          <span>Python</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="fade-in-section">
+      <h2>Wanted Skills</h2>
+      <div class="skills">
+        <a href="#" class="info-item" data-title="Apache Spark" data-description="대규모 데이터 분산 처리를 위한 고속 클러스터 컴퓨팅 프레임워크입니다.">
+          <img src="img/spark.png" alt="Apache Spark">
+          <span>Apache Spark</span>
+        </a>
+        <a href="#" class="info-item" data-title="Tableau" data-description="데이터를 시각적으로 분석하고 대시보드를 만들 수 있는 강력한 비즈니스 인텔리전스 도구입니다.">
+          <img src="img/tableau.png" alt="Tableau">
+          <span>Tableau</span>
+        </a>
+        <a href="#" class="info-item" data-title="Apache Airflow" data-description="프로그래밍 방식으로 데이터 파이프라인을 작성, 스케줄링 및 모니터링하는 오픈소스 플랫폼입니다.">
+          <img src="img/airflow.png" alt="Apache Airflow">
+          <span>Apache Airflow</span>
+        </a>
+        <a href="#" class="info-item" data-title="SQL" data-description="관계형 데이터베이스에서 데이터를 관리하고 처리하기 위한 표준 질의 언어입니다.">
+          <img src="img/sql.png" alt="SQL">
+          <span>SQL</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="fade-in-section">
+        <h2>Awards & Certifications</h2>
+        <h3>보유 자격증</h3>
+        <div class="certifications">
+            <a href="#" class="info-item" data-title="정보처리기능사" data-description="컴퓨터에 대한 기초 지식을 바탕으로 정보 시스템을 운용하고 개발하는 능력을 평가하는 국가기술자격증입니다. (취득)">
+                <img src="img/cert_icon.png" alt="자격증 아이콘">
+                <span>정보처리기능사</span>
+            </a>
+        </div>
+        <h3 class="sub-heading">목표 자격증</h3>
+        <div class="certifications">
+            <a href="#" class="info-item" data-title="SQL 개발자 (SQLD)" data-description="데이터베이스와 데이터 모델링에 대한 지식을 바탕으로 SQL 작성 및 활용 능력을 평가하는 국가공인자격증입니다.">
+                <img src="img/cert_icon.png" alt="자격증 아이콘">
+                <span>SQLD</span>
+            </a>
+            <a href="#" class="info-item" data-title="데이터분석 준전문가 (ADsP)" data-description="데이터 이해에 대한 기본 지식을 바탕으로 데이터 분석 기획 및 데이터 분석 등의 직무 수행 능력을 검정하는 국가공인자격증입니다.">
+                <img src="img/cert_icon.png" alt="자격증 아이콘">
+                <span>ADsP</span>
+            </a>
+            <a href="#" class="info-item" data-title="빅데이터분석기사" data-description="대용량의 데이터 집합으로부터 유용한 정보를 찾고 결과를 예측하기 위한 전문 인력의 역량을 평가하는 국가기술자격증입니다.">
+                <img src="img/cert_icon.png" alt="자격증 아이콘">
+                <span>빅데이터분석기사</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="fade-in-section">
+      <h2>Projects</h2>
+      <div class="tag-filter">
+        <button class="tag-btn active" data-tag="all">All</button>
+        <button class="tag-btn" data-tag="데이터분석">#데이터분석</button>
+        <button class="tag-btn" data-tag="AI">#AI</button>
+        <button class="tag-btn" data-tag="시각화">#시각화</button>
+        <button class="tag-btn" data-tag="하드웨어제어">#하드웨어제어</button>
+        <button class="tag-btn" data-tag="챗봇">#챗봇</button>
+      </div>
+      <div class="projects">
+        <a href="projects/project1.html" class="project-item" data-tags="AI,하드웨어제어">Project 1: AI 무드등 제작 프로젝트</a>
+        <a href="projects/project2.html" class="project-item" data-tags="데이터분석,고객분석">Project 2: 고객 분석 시스템 제작 프로젝트(Planned)</a>
+        <a href="projects/project3.html" class="project-item" data-tags="데이터분석,공공데이터">Project 3: 공공 데이터 분석 프로젝트(Planned)</a>
+        <a href="projects/project4.html" class="project-item" data-tags="AI,챗봇,NLP">Project 4: AI 챗봇 개선 프로젝트(Planned)</a>
+        <a href="projects/project5.html" class="project-item" data-tags="데이터분석,대시보드,시각화">Project 5: 가상 회사 데이터 대시보드 제작 프로젝트(Planned)</a>
+      </div>
+    </section>
+
+    <section class="fade-in-section">
+      <h2>Desired Job Role</h2>
+      <div class="job-role">
+        <a href="jobrole/data_consultant.html">
+          <img src="img/data_consultant.png" alt="데이터 분석 컨설턴트">
+          <span>Data Analyst</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="fade-in-section">
+        <h2>Guestbook</h2>
+        <form id="guestbook-form">
+            <div class="form-group">
+                <label for="guest-name">Nickname</label>
+                <input type="text" id="guest-name" placeholder="닉네임을 입력하세요">
+            </div>
+            <div class="form-group">
+                <label for="guest-message">Message</label>
+                <textarea id="guest-message" rows="4" placeholder="메시지를 남겨주세요"></textarea>
+            </div>
+            <p class="error-message" id="guestbook-error"></p>
+            <button type="submit" class="submit-btn">남기기</button>
+        </form>
+        <ul id="guestbook-entries">
+        </ul>
+    </section>
+  </div>
+
+  <div id="info-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h3 id="modal-title"></h3>
+      <p id="modal-description"></p>
+    </div>
+  </div>
+
+  <button id="to-top-btn" title="맨 위로 가기">▲</button>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // 타이핑 애니메이션 기능
+      const typingTitle = document.querySelector('.profile h1');
+      const fullText = typingTitle.textContent;
+      typingTitle.textContent = ''; 
+      typingTitle.classList.add('typing'); 
+      let charIndex = 0;
+      const typingInterval = setInterval(function() {
+        if (charIndex < fullText.length) {
+          typingTitle.textContent += fullText[charIndex];
+          charIndex++;
+        } else {
+          clearInterval(typingInterval); 
+          typingTitle.classList.remove('typing'); 
+        }
+      }, 150);
+
+      // 프린트 버튼
+      document.getElementById('print-btn').addEventListener('click', function() {
+        window.print();
+      });
+
+      // 태그 필터링
+      const tagFilterContainer = document.querySelector('.tag-filter');
+      const projectItems = document.querySelectorAll('.project-item');
+      tagFilterContainer.addEventListener('click', function(e) {
+        if (e.target.tagName === 'BUTTON') {
+          tagFilterContainer.querySelector('.active').classList.remove('active');
+          e.target.classList.add('active');
+          const selectedTag = e.target.getAttribute('data-tag');
+          projectItems.forEach(function(item) {
+            const itemTags = item.getAttribute('data-tags');
+            if (selectedTag === 'all' || itemTags.includes(selectedTag)) {
+              item.style.display = 'block';
+            } else {
+              item.style.display = 'none';
+            }
+          });
+        }
+      });
+      
+      // 정보 모달 (스킬, 자격증 공용)
+      const infoModal = document.getElementById('info-modal');
+      const infoItems = document.querySelectorAll('.info-item');
+      const modalTitle = infoModal.querySelector('#modal-title');
+      const modalDesc = infoModal.querySelector('#modal-description');
+      const closeBtn = infoModal.querySelector('.close-btn');
+      infoItems.forEach(function(item) {
+        item.addEventListener('click', function(e) {
+          e.preventDefault();
+          modalTitle.textContent = item.dataset.title;
+          modalDesc.textContent = item.dataset.description;
+          infoModal.style.display = 'block';
+        });
+      });
+      closeBtn.addEventListener('click', function() {
+        infoModal.style.display = 'none';
+      });
+      window.addEventListener('click', function(e) {
+        if (e.target == infoModal) {
+          infoModal.style.display = 'none';
+        }
+      });
+
+      // 방명록
+      const guestbookForm = document.getElementById('guestbook-form');
+      const guestNameInput = document.getElementById('guest-name');
+      const guestMessageInput = document.getElementById('guest-message');
+      const guestbookEntries = document.getElementById('guestbook-entries');
+      const guestbookError = document.getElementById('guestbook-error');
+      guestbookForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const name = guestNameInput.value.trim();
+        const message = guestMessageInput.value.trim();
+        if (name === '' || message === '') {
+          guestbookError.textContent = '닉네임과 메시지를 모두 입력해주세요.';
+          return;
+        }
+        guestbookError.textContent = '';
+        const entryElement = document.createElement('li');
+        entryElement.className = 'guestbook-entry';
+        const headerDiv = document.createElement('div');
+        headerDiv.className = 'entry-header';
+        const nameStrong = document.createElement('strong');
+        nameStrong.textContent = name;
+        const dateSpan = document.createElement('span');
+        dateSpan.className = 'entry-date';
+        dateSpan.textContent = new Date().toLocaleString();
+        headerDiv.appendChild(nameStrong);
+        headerDiv.appendChild(dateSpan);
+        const messageP = document.createElement('p');
+        messageP.className = 'entry-message';
+        messageP.textContent = message;
+        entryElement.appendChild(headerDiv);
+        entryElement.appendChild(messageP);
+        guestbookEntries.prepend(entryElement);
+        guestNameInput.value = '';
+        guestMessageInput.value = '';
+        guestNameInput.focus();
+      });
+
+      // 맨 위로 가기 버튼 기능
+      const toTopBtn = document.getElementById('to-top-btn');
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 200) {
+          toTopBtn.classList.add('show');
+        } else {
+          toTopBtn.classList.remove('show');
+        }
+      });
+      toTopBtn.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      // 스크롤 애니메이션 기능
+      const sections = document.querySelectorAll('.fade-in-section');
+      const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+      };
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+      sections.forEach(section => {
+        observer.observe(section);
+      });
+
+    });
+  </script>
+</body>
+</html>
